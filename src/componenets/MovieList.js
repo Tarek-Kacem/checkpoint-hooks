@@ -1,10 +1,11 @@
 import React from 'react'
+import MovieCard from './MovieCard'
 
-const MovieList = () => {
+const MovieList = ({movies, deleteMovie}) => {
     return (
-        <div>
-            <h1></h1>
-        </div>
+        <div className="moviesarea" style={{display:'flex',flexWrap: "wrap"}}>
+            {movies.map((movie)=> <MovieCard movie={movie} deleteMovie={deleteMovie} key={movie.id}/>)}
+        </div >
     )
 }
 

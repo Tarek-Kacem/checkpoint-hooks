@@ -24,15 +24,17 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input {
+  min-width: 80px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input  {
+  min-width: 300px;
+}
+.movie {
+  color: black;
+  font-size: 18px;
+  margin: 0 10px;
+}
+.listMovies {
+  display: flex;
 }
